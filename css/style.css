@@ -1,0 +1,26 @@
+#ejercicios{
+	height: calc(100vh - 300px);
+	overflow: auto;
+}
+
+.drag-n-drop{
+	height: calc(100vh - 100px);
+	width: 100%;
+	border: 2px dashed #343A40;
+	color: #343A40;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	display: table;
+}
+
+.dnd-text{
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+#timer{
+	text-align: center;
+	font-size: 50px;
+}
+

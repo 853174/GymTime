@@ -1,0 +1,29 @@
+<rutina>
+	<nombre>Rutina brazos</nombre>
+	<ejercicios>
+        <ejercicio descanso="120">
+			<nombre>Biceps horizontal</nombre>
+			<descripcion>15kg</descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+        <ejercicio descanso="120">
+			<nombre>Biceps vertical</nombre>
+			<descripcion>15kg</descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+		<ejercicio descanso="120">
+			<nombre>Triceps maquina</nombre>
+			<descripcion>15kg</descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+        <ejercicio descanso="120">
+			<nombre>Fondos</nombre>
+			<descripcion>Con una silla</descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+	</ejercicios>
+</rutina>

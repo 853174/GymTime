@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="eu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Gym Time</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="create.html">Crear rutina</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="drag-n-drop mt-3" id="drop_zone">
+        <div class="dnd-text">
+          Arrastra una rutina para cargarla.
+        </div>
+      </div>
+
+      <div class="row mt-3" id="rutina_zone" hidden>
+        <div class="col-12 col-md-3 order-sm-2">
+          <h4><img src="img/stopwatch-dark.png" height="30px"/> <span class="align-middle">Cronómetro</span></h4>
+          <hr>
+          <div id="timer">
+            <span id="min">00</span>:<span id="sec">00</span><small>:<span id="mili">00</span></small>
+          </div>
+
+          <button class="btn btn-block btn-success" id="iniciarRutina" onclick="iniciar()">Iniciar "<span class="nombre-rutina"></span>"</button>
+          <button class="btn btn-block btn-warning" id="hacerDescanso" hidden>Hacer descanso</button>
+
+          <div class="row" hidden>
+            <div class="col">
+              <button class="btn btn-outline-dark btn-block" id="btnA"><img id="bntAimg" src="img/play-dark.png" height="25px"/></button>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-dark btn-block" id="btnB"><img id="bntBimg" src="img/trash-dark.png" height="25px"/></button>
+            </div>
+          </div>
+
+          <div id="progreso" class="mt-3" hidden>
+            <div>
+              <b>Progreso de "<span class="nombre-rutina">[RUTINA]</span>"</b>
+              <div class="progress" style="height: 5px;">
+                <div id="progRutina" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="clearfix">
+                <span class="float-right">
+                  <span class="eActual">[eActual]</span> de <span class="eI">[eI]</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-3 progEjercicio">
+              <b>Progreso de "<span class="ejercicio-actual">[EJERCICIO ACTUAL]</span>"</b>
+              <div class="progress" style="height: 5px;">
+                <div id="progEjercicio" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="clearfix">
+                <span class="float-right">
+                  <span class="sActual">[sActual]</span> de <span class="series">[series]</span>
+                </span>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 order-sm-1">
+          <h4><img src="img/workout-dark.png" height="30px"/> <span class="align-middle"><span class="nombre-rutina">[RUTINA]</span></span></h4>
+          <hr>
+          <div id="ejercicios">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="audios" hidden>
+      <audio id="pitido-corto">
+        <source type="audio/mp3" src="js/pitido-corto.mp3">
+      </audio>
+      <audio id="pitido-largo">
+        <source type="audio/mp3" src="js/pitido-largo.mp3">
+      </audio>
+      <audio id="fin">
+        <source type="audio/mp3" src="js/final.mp3">
+      </audio>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/drag-n-drop.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/ejercicios.js"></script>
+  </body>
+</html>

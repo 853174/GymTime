@@ -1,0 +1,29 @@
+<rutina>
+	<nombre>Abdominales</nombre>
+	<ejercicios>
+		<ejercicio descanso="120">
+			<nombre>Abdominales suelo 1</nombre>
+			<descripcion>Levantando el tronco.</descripcion>
+			<repeticiones>40</repeticiones>
+			<series descanso="45">3</series>
+		</ejercicio>
+		<ejercicio descanso="120">
+			<nombre>Abdominales laterales</nombre>
+			<descripcion>De pie, con mancuernas.</descripcion>
+			<repeticiones>30</repeticiones>
+			<series descanso="45">3</series>
+		</ejercicio>
+		<ejercicio descanso="120">
+			<nombre>Abdominales suelo 2</nombre>
+			<descripcion>Levantando las piernas.</descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">3</series>
+		</ejercicio>
+		<ejercicio>
+			<nombre>Plancha</nombre>
+			<descripcion/>
+			<tiempo>25</tiempo>
+			<series descanso="40">4</series>
+		</ejercicio>
+	</ejercicios>
+</rutina>

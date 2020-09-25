@@ -1,0 +1,29 @@
+<rutina>
+	<nombre>Rutina Martes</nombre>
+	<ejercicios>
+		<ejercicio descanso="120">
+			<nombre>Remo con mancuerna</nombre>
+			<descripcion></descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+		<ejercicio descanso="120">
+			<nombre>Supine push up</nombre>
+			<descripcion></descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+        <ejercicio descanso="120">
+			<nombre>Biceps horizontal</nombre>
+			<descripcion>8kg</descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+        <ejercicio descanso="120">
+			<nombre>Biceps vertical</nombre>
+			<descripcion>8kg</descripcion>
+			<repeticiones>8</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+	</ejercicios>
+</rutina>

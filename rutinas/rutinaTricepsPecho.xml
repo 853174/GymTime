@@ -1,0 +1,29 @@
+<rutina>
+	<nombre>Rutina Jueves</nombre>
+	<ejercicios>
+		<ejercicio descanso="120">
+			<nombre>Flexiones</nombre>
+			<descripcion></descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">6</series>
+		</ejercicio>
+		<ejercicio descanso="120">
+			<nombre>Press banca</nombre>
+			<descripcion></descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+        <ejercicio descanso="120">
+			<nombre>Triceps tumbado</nombre>
+			<descripcion></descripcion>
+			<repeticiones>10</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+		<ejercicio descanso="120">
+			<nombre>Fondos</nombre>
+			<descripcion>Con una silla</descripcion>
+			<repeticiones>8</repeticiones>
+			<series descanso="45">5</series>
+		</ejercicio>
+	</ejercicios>
+</rutina>
